@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PalateSatisfy helps rescue delicious surplus food from local favourites.">
+  <title>PalateSatisfy | Rescue Delicious Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="PalateSatisfy home">
+      <span class="brand-mark">♧</span><span>PALATESATISFY</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#shop">Shop</a>
+      <a href="#impact">My Impact</a>
+      <a href="#plans">Our Plans</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#shop">Get the App</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow light">GOOD FOOD DESERVES A SECOND CHANCE</p>
+        <h1>Rescue delicious food.</h1>
+        <p class="hero-lead">Delicious surplus meals from local favourites at up to <strong>70% off.</strong> Perfect food should not go to waste.</p>
+        <div class="hero-actions">
+          <a class="button button-orange" href="#shop">Explore food</a>
+          <a class="button button-outline" href="#plans">Partner with us</a>
+        </div>
+        <div class="store-links"><span>Available for iOS</span><span>Available for Android</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a rescued meal">
+        <div class="food-spark spark-one">✦</div><div class="food-spark spark-two">✦</div>
+        <div class="food-bowl"><span>🍱</span></div>
+        <div class="phone-mock"><div class="phone-speaker"></div><div class="phone-screen"><span>🍽️</span><b>Good food.<br>Great value.</b><small>Rescue a meal today</small></div></div>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="how-it-works">
+      <p class="eyebrow">A SMALL ACTION, A BIG IMPACT</p>
+      <h2>Good food. <span>Less waste.</span></h2>
+      <div class="steps">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon">🔎</div><h3>Discover</h3><p>Find bakeries, restaurants and supermarkets offering surplus food nearby.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon">🛍️</div><h3>Rescue</h3><p>Choose a surprise bag, pay a lower price and follow the collection details.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon">🌱</div><h3>Make an impact</h3><p>Enjoy something delicious while helping reduce avoidable food waste.</p></article>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-wrap">
+        <p class="eyebrow">RESCUE BY CATEGORY</p>
+        <h2>What <span>will you rescue today?</span></h2>
+        <div class="category-grid">
+          <article class="category-card">
+            <div class="category-image bakery-image"><span>🥐 🧁 🍰</span><i>NEW</i></div>
+            <div class="category-info"><h3>Bakeries &amp; Cafés</h3><span class="rating">★ 4.8</span></div>
+            <div class="category-bottom"><strong>From £2.99</strong><button class="add-button" data-category="Bakeries & Cafés" aria-label="Add bakeries and cafes">+</button></div>
+          </article>
+          <article class="category-card">
+            <div class="category-image restaurant-image"><span>🍱 🍜 🥗</span><i>POPULAR</i></div>
+            <div class="category-info"><h3>Restaurants</h3><span class="rating">★ 4.9</span></div>
+            <div class="category-bottom"><strong>From £4.00</strong><button class="add-button" data-category="Restaurants" aria-label="Add restaurants">+</button></div>
+          </article>
+          <article class="category-card">
+            <div class="category-image market-image"><span>🛍️ 🥑 🍎</span><i>NEW</i></div>
+            <div class="category-info"><h3>Supermarkets</h3><span class="rating">★ 4.7</span></div>
+            <div class="category-bottom"><strong>From £3.50</strong><button class="add-button" data-category="Supermarkets" aria-label="Add supermarkets">+</button></div>
+          </article>
+        </div>
+        <p class="shop-note" id="shopMessage" aria-live="polite">Choose a category to start exploring rescued food.</p>
+      </div>
+    </section>
+
+    <section class="impact-section section-wrap" id="impact">
+      <div class="impact-heading"><div><p class="eyebrow">YOUR GOOD DEED, MADE VISIBLE</p><h2>My Impact <span>Dashboard</span></h2><p>Track your surplus food savings and environmental milestones.</p></div><span class="period-pill">This month⌄</span></div>
+      <div class="stats-grid">
+        <article class="stat-card stat-primary"><span>Meals rescued</span><strong id="mealsCount">14 bags</strong><small>You're making a difference!</small></article>
+        <article class="stat-card"><span>Money saved</span><strong>£112.50</strong><small>Kept in your pocket</small></article>
+        <article class="stat-card"><span>CO₂ prevented</span><strong class="blue-text">35 kg</strong><small>Better for the planet</small></article>
+        <article class="stat-card"><span>Next tier</span><strong>Level 4</strong><small>2 bags to go</small></article>
+      </div>
+      <div class="impact-lower">
+        <div class="chart-card"><h3>Your rescued food journey</h3><div class="bar-chart" aria-label="Illustrative monthly rescued food chart"><div style="height:28%"><span>Jan</span></div><div style="height:43%"><span>Feb</span></div><div style="height:60%"><span>Mar</span></div><div style="height:48%"><span>Apr</span></div><div style="height:78%"><span>May</span></div><div style="height:68%"><span>Jun</span></div><div style="height:92%"><span>Jul</span></div></div></div>
+        <div class="progress-card"><h3>Level 4: Planet Champion</h3><div class="progress-ring"><span>75%</span></div><p>2 more bags to go</p></div>
+      </div>
+    </section>
+
+    <section class="plans-section" id="plans">
+      <div class="section-wrap">
+        <p class="eyebrow light">SIMPLE, TRANSPARENT PRICING</p>
+        <h2>Choose your plan. <span>Save food, save money.</span></h2>
+        <div class="plans-grid">
+          <article class="plan-card"><div class="plan-icon">🌿</div><h3>Eco Rescuer</h3><p class="plan-price">£0<span>/month</span></p><p>Completely free for consumers. Receive instant notifications and order delicious surprise bags.</p><a href="#shop" class="plan-link">Start rescuing →</a></article>
+          <article class="plan-card featured-plan"><div class="plan-icon">🏪</div><h3>The Restaurant Fee</h3><p class="plan-price">25%<span> commission</span></p><p>No upfront sign-up fees or fixed listing risks. A small transaction percentage applies only when a surplus bag successfully sells.</p><a href="#contact" class="plan-link">Become a partner →</a></article>
+          <article class="plan-card"><div class="plan-icon">⚙️</div><h3>Platform Support</h3><p class="plan-price">£39<span>/year</span></p><p>An annual administration fee supporting secure merchant hosting, automated order verification and technical upkeep.</p><a href="#contact" class="plan-link">Find out more →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-copy"><p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p><h2>Get in <span>touch.</span></h2><p>First time? No worries. Got any questions and feedback? We would love to hear it from you.</p><div class="contact-photo"><span>🥡</span><small>Every rescued bag makes a difference.</small></div></div>
+      <div class="contact-details"><h3>Contact us</h3><div class="contact-item"><span>☎</span><div><b>Contact number</b><a href="tel:09876440065">09876440065</a></div></div><div class="contact-item"><span>✉</span><div><b>Email</b><a href="mailto:hello@palatesatisfy.com">hello@palatesatisfy.com</a></div></div><div class="contact-item"><span>◎</span><div><b>Website</b><a href="https://www.palatesatisfy.com">www.palatesatisfy.com</a><small>London, UK</small></div></div>
+        <form class="contact-form" id="contactForm"><label for="emailInput">Get updates from us</label><div><input id="emailInput" type="email" placeholder="Your email address" required><button type="submit">Join</button></div><small id="formMessage" aria-live="polite"></small></form>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">♧</span><span>PALATESATISFY</span></a><p>Rescue good food. Make a better tomorrow.</p><span>© 2026 PalateSatisfy</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
